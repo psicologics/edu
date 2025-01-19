@@ -13,6 +13,10 @@
             --secondary-color: #6c757d;
         }
         
+        .color{
+            color: white !important;
+        }
+
         .hero-section {
             background: linear-gradient(135deg, #e9ecef 0%, rgba(99, 102, 241, 0.05) 100%);
             padding: 7rem 0 4rem 0;
@@ -114,22 +118,22 @@
 
         .rainbow-text-footer {
             background: linear-gradient(
-                45deg,
-                #f43f5e,
-                #ec4899,
-                #a855f7,
-                #6366f1,
-                #3b82f6,
-                #0ea5e9,
-                #06b6d4
+                to right,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080
             );
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            animation: rainbow-animation 8s linear infinite;
+            animation: rainbow-animation 6s linear infinite;
             background-size: 200% auto;
-            display: inline-block;
-            font-weight: 700;
+            font-weight: bold;
         }
 
         .social-icon {
@@ -199,7 +203,7 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="py-5">
+    <section id="servicios" class="py-3">
         <div class="container">
             <h2 class="text-center section-title">Nuestros Servicios</h2>
             <div class="row g-4">
@@ -276,7 +280,7 @@
     </section>
 
     <!-- Por qué elegirnos -->
-    <section class="bg-light py-5">
+    <section class="bg-light py-3">
         <div class="container">
             <h2 class="text-center section-title">¿Por qué elegirnos?</h2>
             <div class="row g-4">
@@ -306,11 +310,11 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-5">
+    <section id="contacto" class="py-3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="text-center section-title">Contáctanos</h2>
+                    <h2 class="mb-2 text-center section-title">Contáctanos</h2>
                     <div class="card shadow">
                         <div class="card-body p-4">
                             <form id="whatsappForm">
@@ -319,7 +323,7 @@
                                     <input type="text" class="form-control" id="nombre" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <label for="telefono" class="form-label">Teléfono celular</label>
                                     <input type="tel" class="form-control" id="telefono" required>
                                 </div>
                                 <div class="mb-3">
@@ -335,70 +339,63 @@
         </div>
     </section>
 
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="nosotros" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h3 class="h5 rainbow-text-footer">Psicologics</h3>
-                    <p class="text-muted">Transformando vidas a través del desarrollo integral
-                        [Toda la parte anterior del código se mantiene igual hasta el footer, donde continuamos:]
-
-                        <!-- Footer -->
-                        <footer class="footer">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                                        <h3 class="h5 rainbow-text-footer">Psicologics</h3>
-                                        <p class="text-muted">Transformando vidas a través del desarrollo integral</p>
-                                        <div class="mt-4">
-                                            <a href="#" class="text-white me-3 social-icon"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#" class="text-white me-3 social-icon"><i class="fab fa-instagram"></i></a>
-                                            <a href="#" class="text-white me-3 social-icon"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="#" class="text-white social-icon"><i class="fab fa-whatsapp"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3 mb-md-0">
-                                        <h5 class="text-white mb-3">Contacto</h5>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
-                                            <li class="mb-2"><i class="fas fa-envelope me-2"></i> contacto@psicologics.com</li>
-                                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Calle Principal #123</li>
-                        <li><i class="fas fa-clock me-2"></i> Lun - Vie: 9:00 - 18:00</li>
+                    <p class="color text-muted">Transformando vidas a través del desarrollo integral</p>
+                    <div class="mt-4">
+                        <a  target="_blank" href="https://www.facebook.com/lucia.penarivera.93?locale=es_LA" class="text-white me-3 social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a  target="_blank" href="https://www.instagram.com/lu_psicoedu_psicologics?fbclid=IwY2xjawHz-B9leHRuA2FlbQIxMAABHSLGrOitGoNz2PGnJADus6bR7Q0mojTTtAG0lRR_F9umHlvC03vIAEV3Sw_aem_bawu4Ds3X8CduZHDSC7z-A" class="text-white me-3 social-icon"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="https://www.linkedin.com/in/luc%C3%ADa-fernanda-pe%C3%B1a-rivera-85bb2214a" class="text-white me-3 social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a  target="_blank" href="https://wa.me/593992804330" class="text-white social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <a style="color: white;" href="https://wa.me/593992804330" target="_blank" rel="noopener noreferrer"><li class="mb-2"><i class="fas fa-phone me-2"></i> +593 992804330</li></a>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> psicologics@gmail.com</li>
+                        <a style="color: white;" href="https://maps.app.goo.gl/8ZFyRZYmg5gvnjef9" target="_blank" rel="noopener noreferrer"><li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Calle 23 abril - miramelinda</li></a>
+                        <li><i class="fas fa-clock me-2"></i> Lunes - Sabado: 2:00 pm  - 6:00 pm</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h5 class="text-white mb-3">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#inicio" class="text-muted text-decoration-none">Inicio</a></li>
-                        <li class="mb-2"><a href="#servicios" class="text-muted text-decoration-none">Servicios</a></li>
-                        <li class="mb-2"><a href="#nosotros" class="text-muted text-decoration-none">Nosotros</a></li>
-                        <li><a href="#contacto" class="text-muted text-decoration-none">Contacto</a></li>
+                        <li class="mb-2"><a href="#inicio" class="color text-muted text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="color text-muted text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#nosotros" class="color text-muted text-decoration-none">Nosotros</a></li>
+                        <li><a href="#contacto" class="color text-muted text-decoration-none">Contacto</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="my-4 bg-gray-600">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <small class="text-muted">&copy; 2025 Psicologics. Todos los derechos reservados.</small>
+                    <small class="color text-muted">&copy; 2025 Psicologics. Todos los derechos reservados.</small>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <small>
-                        <a href="#" class="text-muted text-decoration-none me-3">Términos y Condiciones</a>
-                        <a href="#" class="text-muted text-decoration-none">Política de Privacidad</a>
+                        <a href="#" class="color text-muted text-decoration-none me-3">Términos y Condiciones</a>
+                        <a href="#" class="color text-muted text-decoration-none">Política de Privacidad</a>
                     </small>
                 </div>
             </div>
         </div>
     </footer>
+    </section>
 
     <!-- Botón de WhatsApp flotante -->
-    <a href="https://wa.me/1234567890" class="position-fixed bottom-0 end-0 mb-4 me-4 btn btn-success rounded-circle p-3" style="z-index: 1000;">
+    <a target="_blank" href="https://wa.me/593992804330" class="position-fixed bottom-0 end-0 mb-4 me-4 btn btn-success rounded-circle p-3" style="z-index: 1000;">
         <i class="fab fa-whatsapp fa-2x"></i>
     </a>
 
     <!-- Botón de volver arriba -->
-    <button id="backToTop" class="position-fixed bottom-0 end-0 mb-4 me-4 btn btn-primary rounded-circle p-3" style="z-index: 999; display: none; bottom: 80px;">
+    <button target_blank id="backToTop" class="position-fixed bottom-0 end-0 mb-4 me-4 btn btn-primary rounded-circle p-3" style="z-index: 999; display: none; bottom: 80px;">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -440,6 +437,9 @@
                 }
             });
         });
+
+
+
     </script>
 
 </body>
